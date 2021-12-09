@@ -8,9 +8,6 @@ create table user (
         PRIMARY KEY (username)
 );
 
-insert into user(username, password) value ('admin', 'admin');
-insert into user(username, password) value ('user', 'user');
-
 create table info (
         username varchar(50) NOT NULL,
         fname varchar(50) NOT NULL,
@@ -22,8 +19,3 @@ create table info (
 
 insert into info(username ,fname, lname, address, age) value ('user', 'Etunimi','Sukunimi', 'osoite1', 12);
 insert into info(username, fname, lname, address, age) value ('admin', 'Roni','Junttila', 'ouluntie1', 21);
-
-
-
-
-tääääääääääääääää uus on vielä ahjamattta sisää eli usernam primaryksi
