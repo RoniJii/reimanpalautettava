@@ -14,8 +14,8 @@ create table info (
         lname varchar(50) NOT NULL,
         address varchar(150) NOT NULL,
         age int NOT NULL,
-        PRIMARY KEY (username)
+        FOREIGN KEY (username) 
+        REFERENCES info (username)
+        
 );
 
-insert into info(username ,fname, lname, address, age) value ('user', 'Etunimi','Sukunimi', 'osoite1', 12);
-insert into info(username, fname, lname, address, age) value ('admin', 'Roni','Junttila', 'ouluntie1', 21);
