@@ -5,7 +5,7 @@ use n0juro00;
 create table user (
         username varchar(50) NOT NULL,
         password varchar(150) NOT NULL,
-        PRIMARY KEY (username)
+        CONSTRAINT username_pk PRIMARY KEY (username)
 );
 
 create table info (
@@ -14,7 +14,7 @@ create table info (
         lname varchar(50) NOT NULL,
         address varchar(150) NOT NULL,
         age int NOT NULL,
-        FOREIGN KEY (username) 
+        CONSTRAINT info_FK FOREIGN KEY (username) 
         REFERENCES info (username)
         
 );
